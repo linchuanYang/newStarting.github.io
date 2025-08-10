@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>杨林川-为企业和个人创建出色的UI/UX</title>
+		<meta name="description" content="yanglinchuan,杨林川个人网站，成都UI/UX设计，成都网站设计，网页设计师，视觉交互设计，企业网站设计，HTML5，CSS3，photoshop" />
+		<meta name="keywords" content="yanglinchuan,杨林川个人网站，成都UI/UX设计，成都网站设计，网页设计师，视觉交互设计，企业网站设计，HTML5，CSS3，photoshop" />
+		<meta name="author" content="Hellolinchuan, 498675806@qq.com" />
+		<meta name="format-detection" content="telphone=no, email=no"/>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+		<meta name="msapplication-tap-highlight" content="no">
+		<link rel="shortcut icon" type="image/ico" href="../../images/favicon.png"/>
+		
+		<link rel="stylesheet" type="text/css" href="../../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/tabs-public.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/page05.css"/>
+		
+	</head>
+	<body>
+		
+		<canvas></canvas>
+		
+		<div id="phoneWrap">
+			<div id="phoneTab">
+				
+				<ul class="nav-wrap">
+					<li class="tab-item">
+						<a href="javascript:void(0);" id="defaultTab" class="mui-active">
+							<span class="mui-icon mui-icon-jc">
+								<i class="mui-icon-a mui-icon-jc-a"></i>
+							</span>
+							<span class="mui-tab-label">竞猜</span>
+						</a>
+					</li>
+					
+					<li class="tab-item">
+						<a href="javascript:void(0);">
+							<span class="mui-icon mui-icon-bf">
+								<i class="mui-icon-a mui-icon-bf-a"></i>
+							</span>
+							<span class="mui-tab-label">比分</span>
+						</a>
+					</li>
+					
+					<li class="tab-item">
+						<a href="javascript:void(0);">
+							<span class="mui-icon mui-icon-zx">
+								<i class="mui-icon-a mui-icon-zx-a"></i>
+								<i class="mui-icon-a mui-icon-zx-b"></i>
+								<i class="mui-icon-a mui-icon-zx-c"></i>
+							</span>
+							<span class="mui-tab-label">资讯</span>
+						</a>
+					</li>
+					
+					<li class="tab-item">
+						<a href="javascript:void(0);">
+							<span class="mui-icon mui-icon-wd">
+								<i class="mui-icon-a mui-icon-wd-a"></i>
+							</span>
+							<span class="mui-tab-label">我的</span>
+						</a>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+		
+		<script src="../../js/jquery.min2.0.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			(function () {
+  				$('.tab-item a').click(function () {
+    				$('.tab-item a').removeClass('mui-active');
+    				return $(this).addClass('mui-active');
+  				});
+			}).call(this);
+		</script>
+		
+		<script src="../../js/tabpugongying.js" type="text/javascript" charset="utf-8"></script>
+		
+	</body>
+</html>

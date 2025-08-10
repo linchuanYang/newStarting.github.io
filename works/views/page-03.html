@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>杨林川-为企业和个人创建出色的UI/UX</title>
+		<meta name="description" content="yanglinchuan,杨林川个人网站，成都UI/UX设计，成都网站设计，网页设计师，视觉交互设计，企业网站设计，HTML5，CSS3，photoshop" />
+		<meta name="keywords" content="yanglinchuan,杨林川个人网站，成都UI/UX设计，成都网站设计，网页设计师，视觉交互设计，企业网站设计，HTML5，CSS3，photoshop" />
+		<meta name="author" content="Hellolinchuan, 498675806@qq.com" />
+		<meta name="format-detection" content="telphone=no, email=no"/>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+		<meta name="msapplication-tap-highlight" content="no">
+		<link rel="shortcut icon" type="image/ico" href="../../images/favicon.png"/>
+		
+		<link rel="stylesheet" type="text/css" href="../../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/page03.css"/>
+	</head>
+	<body>
+		
+		<canvas class="canvas"></canvas>
+		<div class="help" style="display: none;">?</div>
+		
+		<section class="login-wrap overlay" ng-controller="myController">
+			<a class="logo-box" href="javascript:void(0);">
+				<img src="../../images/page03/logo.png" alt="桃子互联网医院"/>
+			</a>
+			
+			<div class="login-main">
+				<!--<form action="" method="post">-->
+					<div class="list-box">
+						<label class="fl input-icon">
+							<i class="fa fa-user"></i>
+						</label>
+						<input class="input-style" type="text" name="userCode" id="userName" placeholder="请输入账号" />
+					</div>
+					
+					<div class="list-box">
+						<label class="fl input-icon">
+							<i class="fa fa-pwd"></i>
+						</label>
+						<input class="input-style" type="password" name="pwdCode" id="loginPwd" placeholder="请输入密码" />
+					</div>
+					
+					<div class="list-box">
+						<label class="fl input-icon">
+							<i class="fa fa-qrcode"></i>
+						</label>
+						<input  class="fl input-style code-input" id="J_codetext" maxlength="4" type="text" placeholder="请输入验证码">
+						<canvas class="fr J_codeimg" id="myCanvas" onclick="createCode()">对不起，您的浏览器不支持canvas，请下载最新版浏览器!</canvas>
+					</div>
+					
+					<div class="prompt-box">
+						<p class="error-prompt">这块是错误提示信息，默认隐藏</p>
+					</div>
+					
+					<input class="sub-btn" type="submit" name="loginSbt" id="loginSbt" value="立即登录" />
+				<!--</form>-->
+			</div>
+		</section>	
+		
+		<script src="../../js/jquery.min2.0.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/page03/verificationNumbers.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/page03/login.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+	        $(function() {
+	            $(".list-box input").focus(function() {
+	                $(this).parent().addClass("borderCol");
+	            });
+	            $(".list-box input").blur(function() {
+	                $(this).parent().removeClass("borderCol");
+	            });
+	        });
+	        createCode();
+	    </script>
+		
+	</body>
+</html>

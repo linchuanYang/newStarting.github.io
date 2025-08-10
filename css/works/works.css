@@ -1,0 +1,765 @@
+@charset "utf-8";
+
+/*主色调预设*/
+:root{
+	--mainLeftBg: #24305E;
+	--mainBlue: #25258E;
+	--mainRed: #EE3D49;
+	--duration: 10s;
+  	--ease: cubic-bezier(.6, 0, .2, 1);
+}
+
+html,body{
+	min-width: 1200px;
+}
+
+body{
+	background: #fff;
+}
+
+header{
+	width: 100%;
+	padding: 0 30px;
+	background: var(--mainLeftBg);
+	overflow: hidden;
+}
+
+.head-nav .logo{
+	display: block;
+	width: 44px;
+	height: 44px;
+	margin: 6px 0;
+	background: url(../../images/logo.svg) no-repeat center;
+	text-indent: -30000px;
+}
+
+.nav-link{
+	padding: 10px 0;
+}
+
+.head-nav .nav-link a{
+	display: inline-block;
+	font-size: 14px;
+	color: #999;
+	padding: 0 12px;
+	line-height: 36px;
+}
+
+.nav-link a:hover{
+	color: #fff;
+}
+
+.nav-link a.link-active{
+	color: #ee3d49;
+}
+
+.nav-link a.contact-me{
+	padding-left: 36px;
+	height: 36px;
+	color: #fff;
+	background: rgba(218, 61, 73, 1) url(../../images/works/qq.svg) no-repeat 12px center;
+	background-size: 16px;
+	border-radius: 2px;
+}
+
+.nav-link a.contact-me:hover{
+	background-color: rgba(218, 61, 73, .9);
+}
+
+#bannerWrap{
+	position: relative;
+	width: 100%;
+	height: 360px;
+	background: #2f2f6d;
+	overflow: hidden;
+}
+/*这一块是banner区域的视差滚动的css开始*/
+
+#bannerWrap img{
+	max-width: none;
+}
+
+.pelm {
+	position: absolute;
+}
+
+#warpbg {
+	top: -200px;
+	left: -350px;
+}
+
+#star1 {
+	top: 150px;
+	right: 200px;
+}
+
+#star2 {
+	top: 220px;
+	right: 500px;
+}
+
+#star3 {
+	bottom: 20px;
+	right: 20px;
+}
+
+#star4 {
+	top: 40px;
+	left: 290px;
+}
+
+#star5 {
+	bottom: 138px;
+	left: 170px;
+}
+
+#planet {
+	top: -103px;
+	left: -103px;
+}
+
+#robot {
+	top: 200px;
+	right: 250px;
+}
+
+#astronaut {
+	top: 220px;
+	right: 100px;
+}
+
+#asteroid {
+	bottom: 10px;
+	right: 10px;
+}
+/*这一块是banner区域的视差滚动的css结束*/
+
+.banner-main{
+	z-index: 3;
+	position: absolute;
+	top: 45%;
+	left: 370px;
+	margin-top: -90px;
+}
+/*这一块是banner区域的文字滚动的css开始*/  
+#master {
+    font-size: 60px;
+    line-height: 1;
+    font-weight: bold;
+    letter-spacing: 0;
+    -webkit-font-smoothing: inherit;
+    color: #fff;
+    text-rendering: optimizeLegibility;
+}
+
+#master-container-scroller {
+    height: 66px;
+    margin-bottom: -6px;
+    overflow: hidden;
+    position: relative
+}
+
+#master-container-scroller .master-container-scroller_item {
+    display: block;
+    padding-bottom: 6px;
+    -webkit-animation: scroll 15s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
+    animation: scroll 15s cubic-bezier(0.645, 0.045, 0.355, 1) infinite
+}
+
+#master-container-scroller .master-container-scroller_item[href]:hover {
+    text-decoration: underline
+}
+
+#master-container-scroller .master-container-scroller_item:nth-child(1),
+#master-container-scroller .master-container-scroller_item:nth-child(1) a {
+    color: #E65F48
+}
+
+#master-container-scroller .master-container-scroller_item:nth-child(2),
+#master-container-scroller .master-container-scroller_item:nth-child(2) a {
+    color: #E65F48
+}
+
+#master-container-scroller .master-container-scroller_item:nth-child(3),
+#master-container-scroller .master-container-scroller_item:nth-child(3) a {
+    color: #76BCAD
+}
+
+#master-container-scroller .master-container-scroller_item:nth-child(4),
+#master-container-scroller .master-container-scroller_item:nth-child(4) a {
+    color: #84719f
+}
+
+#master-container-scroller .master-container-scroller_item:nth-child(5),
+#master-container-scroller .master-container-scroller_item:nth-child(5) a {
+    color: #d47787
+}
+
+#master-container-scroller .master-container-scroller_item:nth-child(6),
+#master-container-scroller .master-container-scroller_item:nth-child(6) a {
+    color: #F09551
+}
+
+#master-container-scroller .master-container-scroller_item:nth-child(7),
+#master-container-scroller .master-container-scroller_item:nth-child(7) a {
+    color: #349AB5
+}
+
+#master-container-scroller .master-container-scroller_item:nth-child(8),
+#master-container-scroller .master-container-scroller_item:nth-child(8) a {
+    color: #e86042
+}
+
+#master-container-scroller .master-container-scroller_item:nth-child(9),
+#master-container-scroller .master-container-scroller_item:nth-child(9) a {
+    color: #74bcae
+}
+
+#master-container-scroller .master-container-scroller_item:nth-child(10),
+#master-container-scroller .master-container-scroller_item:nth-child(10) a {
+    color: #E65F48
+}
+
+#master-container-grid .master-container-grid_item .img {
+    position: relative
+}
+
+#master-container-grid .master-container-grid_item .grid_item-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    text-decoration: none
+}
+
+#master-container-grid .master-container-grid_item .grid_item-overlay:hover {
+    opacity: 1
+}
+
+#master-container-grid .master-container-grid_item .grid_item-overlay .link {
+    display: inline-block;
+    box-shadow: 0 1px 0 0 #fff, inset 0 0 0 #fff;
+    transition: box-shadow .2s ease
+}
+
+#master-container-grid .master-container-grid_item .grid_item-overlay .link:hover {
+    box-shadow: 0 2px 0 0 #fff, inset 0 -1px 0 0 #fff
+}
+
+@-webkit-keyframes scroll {
+	   	0.0% {
+	    -webkit-transform: translateY(0px);
+	    transform: translateY(0px)
+	}
+	3.7037037037037037% {
+	    -webkit-transform: translateY(0px);
+	    transform: translateY(0px)
+	}
+	11.11111111111111% {
+	    -webkit-transform: translateY(-66px);
+	    transform: translateY(-66px)
+	}
+    14.814814814814815% {
+        -webkit-transform: translateY(-66px);
+        transform: translateY(-66px)
+    }
+    22.22222222222222% {
+        -webkit-transform: translateY(-132px);
+        transform: translateY(-132px)
+    }
+  	25.925925925925927% {
+      	-webkit-transform: translateY(-132px);
+      	transform: translateY(-132px)
+  	}
+    33.333333333333336% {
+        -webkit-transform: translateY(-198px);
+        transform: translateY(-198px)
+    }
+    37.03703703703704% {
+        -webkit-transform: translateY(-198px);
+        transform: translateY(-198px)
+    }
+    44.44444444444444% {
+        -webkit-transform: translateY(-264px);
+        transform: translateY(-264px)
+    }
+    48.148148148148145% {
+        -webkit-transform: translateY(-264px);
+        transform: translateY(-264px)
+    }
+    55.55555555555556% {
+        -webkit-transform: translateY(-330px);
+        transform: translateY(-330px)
+    }
+    59.25925925925926% {
+        -webkit-transform: translateY(-330px);
+        transform: translateY(-330px)
+    }
+    66.66666666666667% {
+        -webkit-transform: translateY(-396px);
+        transform: translateY(-396px)
+    }
+    70.37037037037037% {
+        -webkit-transform: translateY(-396px);
+        transform: translateY(-396px)
+    }
+    77.77777777777777% {
+        -webkit-transform: translateY(-462px);
+        transform: translateY(-462px)
+    }
+    81.48148148148148% {
+        -webkit-transform: translateY(-462px);
+        transform: translateY(-462px)
+    }
+    88.88888888888889% {
+        -webkit-transform: translateY(-528px);
+        transform: translateY(-528px)
+    }
+    92.5925925925926% {
+        -webkit-transform: translateY(-528px);
+        transform: translateY(-528px)
+    }
+    100.0% {
+        -webkit-transform: translateY(-594px);
+        transform: translateY(-594px)
+    }
+}
+@keyframes scroll {
+	   	0.0% {
+	    -webkit-transform: translateY(0px);
+	    transform: translateY(0px)
+	}
+	3.7037037037037037% {
+	    -webkit-transform: translateY(0px);
+	    transform: translateY(0px)
+	}
+	11.11111111111111% {
+	    -webkit-transform: translateY(-66px);
+	    transform: translateY(-66px)
+	}
+    14.814814814814815% {
+        -webkit-transform: translateY(-66px);
+        transform: translateY(-66px)
+    }
+    22.22222222222222% {
+        -webkit-transform: translateY(-132px);
+        transform: translateY(-132px)
+    }
+  	25.925925925925927% {
+      	-webkit-transform: translateY(-132px);
+      	transform: translateY(-132px)
+  	}
+    33.333333333333336% {
+        -webkit-transform: translateY(-198px);
+        transform: translateY(-198px)
+    }
+    37.03703703703704% {
+        -webkit-transform: translateY(-198px);
+        transform: translateY(-198px)
+    }
+    44.44444444444444% {
+        -webkit-transform: translateY(-264px);
+        transform: translateY(-264px)
+    }
+    48.148148148148145% {
+        -webkit-transform: translateY(-264px);
+        transform: translateY(-264px)
+    }
+    55.55555555555556% {
+        -webkit-transform: translateY(-330px);
+        transform: translateY(-330px)
+    }
+    59.25925925925926% {
+        -webkit-transform: translateY(-330px);
+        transform: translateY(-330px)
+    }
+    66.66666666666667% {
+        -webkit-transform: translateY(-396px);
+        transform: translateY(-396px)
+    }
+    70.37037037037037% {
+        -webkit-transform: translateY(-396px);
+        transform: translateY(-396px)
+    }
+    77.77777777777777% {
+        -webkit-transform: translateY(-462px);
+        transform: translateY(-462px)
+    }
+    81.48148148148148% {
+        -webkit-transform: translateY(-462px);
+        transform: translateY(-462px)
+    }
+    88.88888888888889% {
+        -webkit-transform: translateY(-528px);
+        transform: translateY(-528px)
+    }
+    92.5925925925926% {
+        -webkit-transform: translateY(-528px);
+        transform: translateY(-528px)
+    }
+    100.0% {
+        -webkit-transform: translateY(-594px);
+        transform: translateY(-594px)
+    }
+}
+
+.right-fixed{
+	/*display: none;*/
+	z-index: 100;
+	position: fixed;
+	right: 40px;
+	bottom: 90px;
+}
+
+.right-list{
+	width: 52px;
+	height: 52px;
+	margin-top: 6px;
+}
+
+.right-list a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(153,174,188,.3);
+	border-radius: 2px;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-indent: -3000px;
+}
+
+.right-list a:hover{
+	background-color: rgba(153,174,188,.5);
+}
+
+.qq{
+	background-image: url(../../images/works/qq-right.svg);
+}
+
+.wechat{
+	background-image: url(../../images/works/wechat.svg);
+}
+
+.wechat-wrap{
+	display: none;
+	position: absolute;
+	top: 6px;
+	right: 60px;
+	width: 140px;
+	height: 168px;
+	background: #fff;
+	border-radius: 2px;
+	padding: 20px;
+}
+
+.wechat-wrap p{
+	font-size: 12px;
+	margin-top: 10px;
+	text-align: center;
+	color: #b2b2b2;
+}
+
+.right-list:hover .wechat-wrap{
+	display: block;
+}
+
+.right-list a.scorll-up{
+	display: none;
+	background-image: url(../../images/works/scorll-up.svg);
+}
+
+/*这一块是banner区域的文字滚动的css结束*/  
+.shot-subnav{
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 14px 45px;
+	background: #fff;
+	-webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    background: #fff;
+}
+
+.shot-categories{
+	display: -webkit-flex;
+	display: flex;
+}
+
+.shot-categories span.filter{
+	display: block;
+	padding: 10px 16px;
+	cursor: pointer;
+	font-size: 14px;
+	margin: 0 20px;
+	letter-spacing: 1px;
+	color: #232639;
+}
+
+.shot-categories span:hover{
+	color: var(--mainRed);
+}
+
+.shot-categories span.active{
+	background: var(--mainRed);
+	background: linear-gradient(-217deg, #FF7343 0%, #FF3554 97%, #FF3554 97%, #f35 100%);
+	-webkit-box-shadow: 0px 2px 10px rgba(223, 45, 70, 0.35);
+	box-shadow: 0px 4px 10px rgba(223, 45, 70, 0.35);
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	color: #fff;
+}
+
+.works-wrap{
+	width: 100%;
+	padding: 30px 0 30px 0;
+	background: #f4f4f4;
+	-webkit-transition:all 1s ease;
+	transition:all 1s ease;
+}
+
+@media screen and (min-width: 1136px){
+	.works-content{
+		width: 1116px;
+	}
+}
+
+@media screen and (min-width: 1508px){
+	.works-content{
+		width: 1488px;
+	}
+}
+
+@media screen and (min-width: 1880px){
+	.works-content{
+		width: 1860px;
+	}
+}
+
+.works-content{
+	margin: 0 auto;
+}
+
+#portfoliolist .portfolio {
+	display:none;
+	float: left;
+	width: 372px;
+	margin-bottom: 30px;
+}
+
+.MochiBox{
+	width: 342px;
+	margin: 0 auto;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+} 
+
+.portfolio-wrapper {
+	position: relative;
+	width: 100%;
+	height: 262px;
+	padding: 10px;
+	background: #fff;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.portfolio-wrapper a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.portfolio-wrapper img {
+	max-width:100%;
+	-webkit-transition: -webkit-transform .5s;
+  	transition: transform .5s;
+}
+
+.portfolio-wrapper:hover img{
+	-webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.card-tit{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -52px;
+	height: 52px;
+	padding: 10px;
+	line-height: 32px;
+	background: #fff;
+	font-size: 14px;
+	color: #232639;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	letter-spacing: 1px;
+}
+
+.card-tit:before{
+	content: '';
+	display: inline-block;
+	width: 2px;
+	height: 14px;
+	background: var(--mainRed);
+	margin-right: 10px;
+	vertical-align: -2px;
+}
+
+.portfolio:hover .card-tit{
+	bottom: 0;
+}
+
+/*2020动画css-begin*/
+.digit{
+	display: flex;
+  	stroke-width: 30;
+  	-webkit-animation: var(--duration) var(--ease) both alternate infinite;
+    animation: var(--duration) var(--ease) both alternate infinite;
+  	-webkit-animation-delay: calc( (var(--i) * 0.05s));
+    animation-delay: calc( (var(--i) * 0.05s));
+}
+.digit circle,.digit path {
+  	-webkit-animation: inherit;
+    animation: inherit;
+  	stroke: var(--color);
+  	stroke-linejoin: round;
+  	stroke-linecap: round;
+  	/* Additional offsets for rounded stroke */
+  	stroke-dashoffset: -1.2;
+ 	stroke-dasharray: 1 1.2;
+}
+.digit circle {
+  	-webkit-animation-name: circle-draw;
+    animation-name: circle-draw;
+}
+@-webkit-keyframes circle-draw {
+  	0%, 5% {
+    	stroke-dasharray: 0 1.2 .2 .3;
+    	stroke-dashoffset: 1.75;
+  	}
+  	18%, 50% {
+    	stroke-dasharray: 1 1.1;
+    	stroke-dashoffset: 0;
+  	}
+  	70%, 100% {
+    	stroke-dashoffset: -1.1;
+  	}
+}
+@keyframes circle-draw {
+  	0%, 5% {
+    	stroke-dasharray: 0 1.2 .2 .3;
+    	stroke-dashoffset: 1.75;
+  	}
+  	18%, 50% {
+    	stroke-dasharray: 1 1.1;
+    	stroke-dashoffset: 0;
+  	}
+  	70%, 100% {
+    	stroke-dashoffset: -1.1;
+  	}
+}
+.digit path {
+  	-webkit-animation-name: path-draw;
+    animation-name: path-draw;
+}
+@-webkit-keyframes path-draw {
+  	0%, 43% {
+    	stroke-dashoffset: 1.1;
+  	}
+  	90%, 100% {
+    	stroke-dashoffset: 0;
+  	}
+}
+@keyframes path-draw {
+  	0%, 43% {
+    	stroke-dashoffset: 1.1;
+  	}
+  	90%, 100% {
+    	stroke-dashoffset: 0;
+  	}
+}
+.digit {
+  	-webkit-animation-name: digit;
+    animation-name: digit;
+}
+.digit:nth-child(1) {
+  	--x-offset: 150%;
+}
+.digit:nth-child(2) {
+  	--x-offset: 50%;
+}
+.digit:nth-child(3) {
+  	--x-offset: -50%;
+}
+.digit:nth-child(4) {
+  	--x-offset: -150%;
+}
+.digit:nth-child(even) {
+  	--y-offset: calc(-25% + 2%);
+}
+.digit:nth-child(odd) {
+  	--y-offset: calc(25% - 12%);
+}
+@-webkit-keyframes digit {
+  	from, 15% {
+    	-webkit-transform: translate(var(--x-offset, 0), var(--y-offset, 0));
+        transform: translate(var(--x-offset, 0), var(--y-offset, 0));
+  	}
+  	30% {
+    	-webkit-transform: translate(0%, var(--y-offset));
+        transform: translate(0%, var(--y-offset));
+  	}
+  	45%, to {
+    	-webkit-transform: none;
+        transform: none;
+  	}
+}
+@keyframes digit {
+  	from, 15% {
+    	-webkit-transform: translate(var(--x-offset, 0), var(--y-offset, 0));
+        transform: translate(var(--x-offset, 0), var(--y-offset, 0));
+  	}
+  	30% {
+    	-webkit-transform: translate(0%, var(--y-offset));
+        transform: translate(0%, var(--y-offset));
+  	}
+  	45%, to {
+    	-webkit-transform: none;
+        transform: none;
+  	}
+}
+.digits {
+  	display: flex;
+  	flex-direction: row;
+}
+
+/*2020动画css-end*/
+
+.footer{
+	padding: 26px;
+	background: #fff;
+	border-top: 1px solid #e5e5e5;
+	text-align: center;
+}

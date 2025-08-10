@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>杨林川-为企业和个人创建出色的UI/UX</title>
+		<meta name="description" content="yanglinchuan,杨林川个人网站，成都UI/UX设计，成都网站设计，网页设计师，视觉交互设计，企业网站设计，HTML5，CSS3，photoshop" />
+		<meta name="keywords" content="yanglinchuan,杨林川个人网站，成都UI/UX设计，成都网站设计，网页设计师，视觉交互设计，企业网站设计，HTML5，CSS3，photoshop" />
+		<meta name="author" content="Hellolinchuan, 498675806@qq.com" />
+		<meta name="format-detection" content="telphone=no, email=no"/>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+		<meta name="msapplication-tap-highlight" content="no">
+		<link rel="shortcut icon" type="image/ico" href="../../images/favicon.png"/>
+		
+		<link rel="stylesheet" type="text/css" href="../../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/page11.css"/>
+		
+	</head>
+	<body>
+		
+		<div class="content">
+		  	<canvas class="snow" id="snow"></canvas>
+		  	
+		  	<div class="preview-slider">
+			    <div class="slider-wrapper">
+			        <div class="slider-item" style="background-image: url(../../images/page11/one.jpg)"></div>
+			        <div class="slider-item" style="background-image: url(../../images/page11/two.jpg)"></div>
+			        <div class="slider-item" style="background-image: url(../../images/page11/three.jpg)"></div>
+			    </div>
+			    <div class="arrow arrow-right"></div>
+			    <div class="arrow arrow-left"></div>
+			</div>
+		  	
+		  	<div class="ground">
+		    	<div class="mound"> 
+		      		<div class="mound_text">404</div>
+		      		<div class="mound_spade"></div>
+		    	</div>
+		  	</div>
+		</div>
+		
+		<script src="../../js/page11/preview-slider.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			(function() {
+				function ready(fn) {
+					if (document.readyState != 'loading'){
+						fn();
+					} else {
+						document.addEventListener('DOMContentLoaded', fn);
+					}
+				}
+	
+				function makeSnow(el) {
+					var ctx = el.getContext('2d');
+					var width = 0;
+					var height = 0;
+					var particles = [];
+					
+					var Particle = function() {
+						this.x = this.y = this.dx = this.dy = 0;
+						this.reset();
+					}
+					
+					Particle.prototype.reset = function() {
+						this.y = Math.random() * height;
+						this.x = Math.random() * width;
+						this.dx = (Math.random() * 1) - 0.5;
+						this.dy = (Math.random() * 0.5) + 0.5;
+					}
+					
+					function createParticles(count) {
+						if (count != particles.length) {
+							particles = [];
+							for (var i = 0; i < count; i++) {
+								particles.push(new Particle());
+							}
+						}
+					}
+							
+					function onResize() {
+						width = window.innerWidth;
+						height = window.innerHeight;
+						el.width = width;
+						el.height = height;
+						
+						createParticles((width * height) / 10000);
+					}
+					
+					function updateParticles() {
+						ctx.clearRect(0, 0, width, height);
+						ctx.fillStyle = '#f6f9fa';
+						
+						particles.forEach(function(particle) {
+							particle.y += particle.dy;
+							particle.x += particle.dx;
+							
+							if (particle.y > height) {
+								particle.y = 0;
+							}
+							
+							if (particle.x > width) {
+								particle.reset();
+								particle.y = 0;
+							}
+							
+							ctx.beginPath();
+							ctx.arc(particle.x, particle.y, 5, 0, Math.PI * 2, false);
+							ctx.fill();
+						});
+						
+						window.requestAnimationFrame(updateParticles);
+					}
+					
+					onResize();
+					updateParticles();
+					
+					window.addEventListener('resize', onResize);
+				}
+				
+				ready(function() {
+					var canvas = document.getElementById('snow');
+					makeSnow(canvas);
+				});
+			})();
+		</script>
+		
+		<script type="text/javascript">
+			window.onload = function () {
+			    new previewSlider({
+			        container: '.preview-slider',
+			        content: true,
+			        arrowLeft: '.arrow-left',
+			        arrowRight: '.arrow-right',
+			        scale: 0.4,
+			        scrollSpeed: 4
+			    });
+			}
+		</script>
+		
+	</body>
+</html>

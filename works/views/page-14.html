@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>杨林川-为企业和个人创建出色的UI/UX</title>
+		<meta name="description" content="yanglinchuan,杨林川个人网站，成都UI/UX设计，成都网站设计，网页设计师，视觉交互设计，企业网站设计，HTML5，CSS3，photoshop" />
+		<meta name="keywords" content="yanglinchuan,杨林川个人网站，成都UI/UX设计，成都网站设计，网页设计师，视觉交互设计，企业网站设计，HTML5，CSS3，photoshop" />
+		<meta name="author" content="Hellolinchuan, 498675806@qq.com" />
+		<meta name="format-detection" content="telphone=no, email=no"/>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+		<meta name="msapplication-tap-highlight" content="no">
+		<link rel="shortcut icon" type="image/ico" href="../../images/favicon.png"/>
+		
+		<link rel="stylesheet" type="text/css" href="../../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/tabs-public.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/page14.css"/>
+		
+	</head>
+	<body>
+		
+		<canvas></canvas>
+		
+		<div id="phoneWrap">
+			<div id="phoneTab">
+				
+				<ul class="nav-wrap">
+			    	<li class="active calendar">
+			    		<a href="javascript:void(0);">
+			        		<div></div>
+			        		<span>首页</span>
+			    		</a>
+			    	</li>
+			    	
+			    	<li class="files">
+			    		<a href="javascript:void(0);">
+			        		<div></div>
+			        		<span>酒店</span>
+			    		</a>
+			    	</li>
+			    	
+			    	<li class="notification">
+			    		<a href="javascript:void(0);">
+			        		<div></div>
+			        		<span>行程</span>
+			    		</a>
+			    	</li>
+			    	
+			    	<li class="settings">
+			    		<a href="javascript:void(0);">
+			        		<div></div>
+			        		<span>我的</span>
+			    		</a>
+			    	</li>
+			  	</ul>
+				
+			</div>
+		</div>
+		
+		<script src="../../js/jquery.min2.0.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('.nav-wrap li a').click(function(e) {
+			    let link = $(this),
+			        li = link.parent();
+			    setActive(li.parent(), li);
+			    return false;
+			});
+			
+			function setActive(nav, li) {
+			    nav.find('li').removeClass('active');
+			    li.addClass('active');
+			    nav.css('--x', li.position().left + li.outerWidth() / 2 + 'px');
+			}
+		</script>
+		<script src="../../js/tabpugongying.js" type="text/javascript" charset="utf-8"></script>
+		
+	</body>
+</html>

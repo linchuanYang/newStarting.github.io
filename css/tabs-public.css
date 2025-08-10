@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+body{
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background: #33b5fd;
+}
+
+#phoneWrap{
+	position: absolute;
+	z-index: 6;
+	width: 500px;
+	height: 560px;
+	top: 0;
+	left: 50%;
+	margin-left: -250px;
+	border: 10px solid #94D6FF;
+	border-top: none;
+	overflow: hidden;
+	border-radius: 0 0 60px 60px;
+	-webkit-box-shadow: 0 10px 20px rgba(0,0,0,.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,.1);
+}
+
+#phoneTab{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 120px;
+	background: #fff;
+	border-radius: 10px 10px 50px 50px;
+}
+
+#phoneTab:after{
+	position: absolute;
+	left: 50%;
+	bottom: 10px;
+	margin-left: -91px;
+	content: '';
+	display: block;
+	width: 182px;
+	height: 6px;
+	border-radius: 3px;
+	background: #EFEFEF;
+}

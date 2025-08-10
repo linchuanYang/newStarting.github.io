@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#9D7AFF;}
+	.st1{fill:#2F2F2F;}
+	.st2{fill:url(#SVGID_1_);}
+	.st3{fill:none;stroke:#2F2F2F;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;}
+</style>
+<g>
+	<path class="st0" d="M36.66,40.42L36.66,40.42c-1.66,0-3-1.34-3-3v0c0-1.66,1.34-3,3-3h0c1.66,0,3,1.34,3,3v0
+		C39.66,39.08,38.32,40.42,36.66,40.42z"/>
+	<path class="st0" d="M105.53,31.03L105.53,31.03c-1.66,0-3-1.34-3-3v0c0-1.66,1.34-3,3-3l0,0c1.66,0,3,1.34,3,3v0
+		C108.53,29.69,107.19,31.03,105.53,31.03z"/>
+	<path class="st0" d="M108.82,93.05L108.82,93.05c-1.66,0-3-1.34-3-3v0c0-1.66,1.34-3,3-3h0c1.66,0,3,1.34,3,3v0
+		C111.82,91.7,110.48,93.05,108.82,93.05z"/>
+	<path class="st1" d="M102.82,54.6L102.82,54.6c-1.66,0-3-1.34-3-3v0c0-1.66,1.34-3,3-3h0c1.66,0,3,1.34,3,3v0
+		C105.82,53.26,104.48,54.6,102.82,54.6z"/>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="72.2402" y1="90.4376" x2="72.2402" y2="32.4376">
+		<stop  offset="0" style="stop-color:#865CFF"/>
+		<stop  offset="1" style="stop-color:#B89FFF"/>
+	</linearGradient>
+	<path class="st2" d="M100.18,67.98L100.18,67.98c-12.15,0-22-9.85-22-22c0-4.45,1.33-8.59,3.6-12.06
+		c-2.88-0.96-5.96-1.49-9.17-1.49h0c-16.02,0-29,12.98-29,29v0c0,16.02,12.98,29,29,29h0c13.77,0,25.29-9.6,28.25-22.47
+		C100.64,67.97,100.41,67.98,100.18,67.98z"/>
+	<g>
+		<path class="st3" d="M24.7,75.99c5,0,5,4,10,4c5,0,5-4,10-4c5,0,5,4,10,4c5,0,5-4,10-4c5,0,5,4,10,4"/>
+	</g>
+	<g>
+		<path class="st3" d="M8.18,92.97c5,0,5,4,10,4c5,0,5-4,10-4c5,0,5,4,10,4c5,0,5-4,10-4s5,4,10,4"/>
+	</g>
+	<g>
+		<path class="st3" d="M19.26,59.08c6.23-0.02,6.24,3.98,12.46,3.96c6.23-0.02,6.22-4.02,12.45-4.04s6.24,3.98,12.47,3.96"/>
+	</g>
+</g>
+</svg>

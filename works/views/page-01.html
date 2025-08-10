@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>杨林川-为企业和个人创建出色的UI/UX</title>
+		<meta name="description" content="yanglinchuan,杨林川个人网站，成都UI/UX设计，成都网站设计，网页设计师，视觉交互设计，企业网站设计，HTML5，CSS3，photoshop" />
+		<meta name="keywords" content="yanglinchuan,杨林川个人网站，成都UI/UX设计，成都网站设计，网页设计师，视觉交互设计，企业网站设计，HTML5，CSS3，photoshop" />
+		<meta name="author" content="Hellolinchuan, 498675806@qq.com" />
+		<meta name="format-detection" content="telphone=no, email=no"/>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+		<meta name="msapplication-tap-highlight" content="no">
+		<link rel="shortcut icon" type="image/ico" href="../../images/favicon.png"/>
+		
+		<link rel="stylesheet" type="text/css" href="../../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/app/style.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/app/swiper.min.css"/>
+		
+	</head>
+	<body>
+		
+		<section id="wrapper">
+			<div id="containerLeft">
+				<div class="left-main">
+					<img class="app-logo" src="../../images/page01/logo.png" alt="赢球帝"/>
+					<h3 class="app-tit">赢球帝</h3>
+					<p class="app-synopsis">一款专业的体育竞彩平台</p>
+					
+					<div>
+						<a class="home-link" href="javascript:history.back(-1);">
+							<span>返回作品列表</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			
+			<div id="containerRight">
+				<div class="phone-wrap">
+					<div class="screen">
+						
+						<div class="swiper-container">
+						    <ul class="swiper-wrapper">
+						        <li class="swiper-slide"><img src="../../images/page01/case1.png"/></li>
+						        <li class="swiper-slide"><img src="../../images/page01/case2.png"/></li>
+						        <li class="swiper-slide"><img src="../../images/page01/case3.png"/></li>
+						        <li class="swiper-slide"><img src="../../images/page01/case4.png"/></li>
+						        <li class="swiper-slide"><img src="../../images/page01/case5.png"/></li>
+						        
+						        <li class="swiper-slide"><img src="../../images/page01/case6.png"/></li>
+						        <li class="swiper-slide"><img src="../../images/page01/case7.png"/></li>
+						        <li class="swiper-slide"><img src="../../images/page01/case8.png"/></li>
+						        <li class="swiper-slide"><img src="../../images/page01/case9.png"/></li>
+						        <li class="swiper-slide"><img src="../../images/page01/case10.png"/></li>
+						        
+						        <li class="swiper-slide"><img src="../../images/page01/case11.png"/></li>
+						        <li class="swiper-slide"><img src="../../images/page01/case12.png"/></li>
+						        <li class="swiper-slide"><img src="../../images/page01/case13.png"/></li>
+						        <li class="swiper-slide"><img src="../../images/page01/case14.png"/></li>
+						        <li class="swiper-slide"><img src="../../images/page01/case15.png"/></li>
+						        
+						        <li class="swiper-slide"><img src="../../images/page01/case16.png"/></li>
+						        <li class="swiper-slide"><img src="../../images/page01/case17.png"/></li>
+						        <li class="swiper-slide"><img src="../../images/page01/case18.png"/></li>
+						        <li class="swiper-slide"><img src="../../images/page01/case19.png"/></li>
+						        <li class="swiper-slide"><img src="../../images/page01/case20.png"/></li>
+						    </ul>
+						</div>
+
+					</div>
+					<div id="home"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+			</div>
+		</section>
+		
+		<script src="../../js/app/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript">
+	
+			var mySwiper;
+			mySwiper = new Swiper('.swiper-container', {
+		        direction: 'horizontal',
+		        loop: true,
+		        speed: 600,
+		        grabCursor: true,
+		        autoplay: {
+		            delay: 6000,
+		            disableOnInteraction: false,
+		        },
+
+		        // 如果需要前进后退按钮
+		        navigation: {
+		            nextEl: '.swiper-button-next',
+		            prevEl: '.swiper-button-prev',
+		        },
+		    });
+			
+		</script>
+	
+		<script type="text/javascript">
+			document.querySelector('.home-link').onmousemove = (e) => {
+			  const x = e.pageX - e.target.offsetLeft
+			  const y = e.pageY - e.target.offsetTop
+			  e.target.style.setProperty('--x', `${ x }px`)
+			  e.target.style.setProperty('--y', `${ y }px`)
+			}
+		</script>
+	</body>
+</html>
